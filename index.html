@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Grid Template · Bootstrap v5.2</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/grid/">
+
+
+  <link href="css\bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css\grid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="py-4">
+
+  <main>
+    <form>
+    <div class="container">
+
+      <h1>Внесение в отчёт новой заявки</h1>
+
+
+      <div class="row mb-3 text-right">
+
+        <div class="col-6 themed-grid-col">
+          <label for="org" class="form-label">Организация:</label>
+          <select class="form-select" name="org" id="org">
+            <option value="1">МЭС Волги</option>
+            <option value="2">Нижегородское ПМЭС</option>
+            <option value="3">Средне-Волжское ПМЭС</option>
+            <option value="4">Самарское ПМЭС</option>
+            <option value="5">Нижне-Волжское ПМЭС</option>
+            <option value="6">Оренбургское ПМЭС</option>
+          </select>
+        </div>
+
+        <div class="col-6 themed-grid-col">
+          <label for="object" class="form-label">Объект:</label>
+          <input class="form-control" list="datalistObjects" id="object" placeholder="Выберите объект из списка...">
+          <datalist id="datalistObjects">
+            <option value="Один">
+            <option value="Два">
+            <option value="Три">
+            <option value="Четыре">
+            <option value="Пять">
+            <option value="Шесть">
+            <option value="Один">
+            <option value="Два">
+            <option value="Три">
+            <option value="Четыре">
+            <option value="Пять">
+            <option value="Шесть">
+            <option value="Один">
+            <option value="Два">
+            <option value="Три">
+            <option value="Четыре">
+            <option value="Пять">
+            <option value="Шесть">
+            <option value="Один">
+            <option value="Два">
+            <option value="Три">
+            <option value="Четыре">
+            <option value="Пять">
+            <option value="Шесть">
+            <option value="Один">
+            <option value="Два">
+            <option value="Три">
+            <option value="Четыре">
+            <option value="Пять">
+            <option value="Шесть">
+          </datalist>
+        </div>
+
+      </div>
+
+      <div class="row mb-3 text-right">
+
+        <div class="col-6 themed-grid-col">
+
+          <label for="Equipment" class="form-label">Оборудование:</label>
+          <textarea class="form-control" id="Equipment"
+            placeholder="Вставьте содержание ячейки Оборудование из заявки..."></textarea>
+
+        </div>
+
+        <div class="col-6 themed-grid-col">
+
+          <label for="Description" class="form-label">Содержание работ:</label>
+          <textarea class="form-control" id="Description"
+            placeholder="Вставьте содержание ячейки Содержание работ из заявки..."></textarea>
+
+        </div>
+
+      </div>
+
+      <div class="row mb-3 text-right">
+
+        <div class="col-6 themed-grid-col">
+          <label for="Category" class="form-label">Категория заявки:</label>
+          <select class="form-select" name="org" id="org" aria-placeholder="Выберите категорию заявки...">
+            <option value="plan">Плановая</option>
+            <option value="unplan">Неплановая</option>
+            <option value="urgent">Неотложенная</option>
+            <option value="emergency">Аварийная</option>
+          </select>
+        </div>
+
+        <div class="col-6 themed-grid-col">
+          <div>
+            <input class="form-check-input" type="checkbox" value="" id="WorksOff">
+            <label class="form-check-label" for="WorksOff">
+              Работы не выполнялись
+            </label>
+          </div>
+          <div>
+            <input type="date" name="WorksOffDate" id="WorksOffDate">
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="row mb-3 text-right">
+
+        <div class="col-6 themed-grid-col">
+          <div>
+            <label class="label">Сроки ремонта:</label>
+          </div>
+          <div class="row">
+
+            <div class="col-md-6 themed-grid-col">Дата и время начала ремонта:</div>
+            <!--           <div class="col-md-3 themed-grid-col">.col-md-2</div> -->
+            <div class="col-md-6 themed-grid-col">Дата и время окончания ремонта:</div>
+            <!--           <div class="col-md-3 themed-grid-col">.col-md-4</div> -->
+            <div class="col-md-6 themed-grid-col">
+              <!--             <div>
+            <label for="StartDate" class="input-label">Дата:</label>
+            </div> -->
+              <input type="date" name="StartDate" id="StartDate">
+              <!--  <div>
+                        <label for="StartTime" class="input-label">Время:</label>
+                        </div> -->
+              <input type="time" name="StartTime" id="StartTime">
+            </div>
+            <!--           <div class="col-md-3 themed-grid-col">.col-md-6</div>
+             -->
+            <div class="col-md-6 themed-grid-col">
+              <input type="date" name="FinishDate" id="FinishDate">
+              <input type="time" name="FinishTime" id="FinishTime">
+
+              <div>
+                <input class="form-check-input" type="checkbox" value="" id="PlanedStatus">
+                <label class="form-check-label" for="PlanedStatus">
+                  Продление сверх планируемого срока
+                </label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" value="" id="FinishTimeActive">
+                <label class="form-check-label" for="FinishTimeActive">
+                  Ремонт завешён
+                </label>
+              </div>
+            </div>
+            <!--             <div class="col-md-3 themed-grid-col">.col-md-8</div> -->
+            <div class="col-md-6 themed-grid-col">
+              <input class="form-check-input" type="checkbox" value="" id="SwitchFormStart">
+              <label class="form-check-label" for="SwitchFormStart">БП при выводе</label>
+              <input type="text" class="form-control">
+
+            </div>
+            <!--           <div class="col-md-3 themed-grid-col">.col-md-10</div> -->
+            <div class="col-md-6 themed-grid-col">
+              <input class="form-check-input" type="checkbox" value="" id="SwitchFormFinish">
+              <label class="form-check-label" for="SwitchFormFinish">БП при вводе</label>
+              <input type="text" class="form-control">
+            </div>
+            <!--             <div class="col-md-3 themed-grid-col">.col-md-12</div> -->
+          </div>
+
+        </div>
+
+        <div class="col-6 themed-grid-col">
+          <div>
+
+            <input class="form-check-input" type="checkbox" value="" id="BypassSwitchStatus">
+            <label class="form-check-label" for="BypassSwitchStatus">
+              С переводом на ОВ
+            </label>
+          </div>
+          <div class="row">
+
+            <div class="col-md-6 themed-grid-col">Дата и время включения ОВ:</div>
+            <!--           <div class="col-md-3 themed-grid-col">.col-md-2</div> -->
+            <div class="col-md-6 themed-grid-col">Дата и время отключения ОВ:</div>
+            <!--           <div class="col-md-3 themed-grid-col">.col-md-4</div> -->
+            <div class="col-md-6 themed-grid-col">
+              <!--             <div>
+                      <label for="StartDate" class="input-label">Дата:</label>
+                      </div> -->
+              <input type="date" name="StartDateBypassSwitch" id="StartDateBypassSwitch">
+              <!--  <div>
+                                  <label for="StartTime" class="input-label">Время:</label>
+                                  </div> -->
+              <input type="time" name="StartTimeBypassSwitch" id="StartTimeBypassSwitch">
+            </div>
+            <!--           <div class="col-md-3 themed-grid-col">.col-md-6</div>
+                       -->
+            <div class="col-md-6 themed-grid-col">
+              <input type="date" name="FinishDateBypassSwitch" id="FinishDate">
+              <input type="time" name="FinishTimeBypassSwitch" id="FinishTimeBypassSwitch">
+            </div>
+            <!--             <div class="col-md-3 themed-grid-col">.col-md-8</div> -->
+            <div class="col-md-3 themed-grid-col">.col-md-9</div>
+            <div class="col-md-3 themed-grid-col">.col-md-10</div>
+            <div class="col-md-3 themed-grid-col">.col-md-11</div>
+            <div class="col-md-3 themed-grid-col">.col-md-12</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row mb-3 text-right">
+
+        <div class="col-12 themed-grid-col">
+
+          <div>
+
+            <input class="form-check-input" type="checkbox" value="" id="Comments">
+            <label class="form-check-label" for="Comments">
+              Комментарии:
+            </label>
+          </div>
+          <textarea class="form-control" id="Comments" placeholder="Добавьте комментарии (при наличии)..."></textarea>
+        </div>
+      </div>
+
+      <div class="row mb-6 text-center">
+
+        <div class="col-12 themed-grid-col">
+          <button type="button" class="btn btn-primary">Внести заявку в отчёт</button>
+        </div>
+
+
+      </div>
+
+
+
+    </form>
+
+      <!--   <div class="container" id="containers">
+    <hr class="my-4">
+
+    <h2 class="mt-4">Containers</h2>
+    <p>Additional classes added in Bootstrap v4.4 allow containers that are 100% wide until a particular breakpoint. v5 adds a new <code>xxl</code> breakpoint.</p>
+  </div>
+
+  <div class="container themed-container text-center">.container</div>
+  <div class="container-sm themed-container text-center">.container-sm</div>
+  <div class="container-md themed-container text-center">.container-md</div>
+  <div class="container-lg themed-container text-center">.container-lg</div>
+  <div class="container-xl themed-container text-center">.container-xl</div>
+  <div class="container-xxl themed-container text-center">.container-xxl</div>
+  <div class="container-fluid themed-container text-center">.container-fluid</div> -->
+  </main>
+
+
+
+</body>
+
+</html>
